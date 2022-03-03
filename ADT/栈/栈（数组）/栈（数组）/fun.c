@@ -19,9 +19,14 @@ void MakeEmpty(Stack S)
 
 int IsEmpty(Stack S)
 {
-	return (S->TopOfStack + 1);
-    //   NULL -> return  0
-    //  !NULL -> return >0
+    if (S->TopOfStack == -1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 int IsFull(Stack S)
